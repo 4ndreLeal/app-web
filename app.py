@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask("hello")
 
@@ -8,4 +8,4 @@ def hello():
 
 @app.route("/contatos")
 def contato():
-    return "André Pinheiro Leal"
+    return render_template("index.html")
